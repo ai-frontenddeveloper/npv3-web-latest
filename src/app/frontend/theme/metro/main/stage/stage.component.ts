@@ -7,7 +7,7 @@ import { TilesTransferService } from '../../services/tiles-transfer/tiles-transf
 @Component({
   selector: 'app-stage',
   templateUrl: './stage.component.html',
-  styleUrls: ['./stage.component.scss'],
+  styleUrls: ['./stage.component.scss', './stage.responsive.component.scss'],
   animations: [
     trigger('stage', [
       state('show', style({
