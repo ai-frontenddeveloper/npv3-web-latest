@@ -15,8 +15,8 @@ import { TilesTransferService } from '../../services/tiles-transfer/tiles-transf
         height: 'calc(100vh - 2rem)'
       })),
       state('hide', style({
-        top: '4rem',
-        height: 'calc(100vh - 6rem)'
+        top: '64px',
+        height: 'calc(100vh - 96px)'
       })),
       transition('show => hide', animate('300ms ease-out')),
       transition('hide => show', animate('300ms ease-in'))
