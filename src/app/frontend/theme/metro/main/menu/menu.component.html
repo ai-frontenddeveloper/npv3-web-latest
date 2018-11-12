@@ -1,0 +1,77 @@
+<div [ngClass]="['menuBg', theme]"></div>
+<div class="mainMenu">
+  <div class="settings">
+    <div class="menu-bottom">
+      <div class="left-menu-item"><i class="fa fa-lg fa-user-circle-o" aria-hidden="true"></i></div>
+      <div class="left-menu-item"><i class="fa fa-lg fa-sign-in" aria-hidden="true"></i></div>
+      <div class="left-menu-item"><i class="fa fa-lg fa-power-off" aria-hidden="true"></i></div>
+    </div>
+  </div>
+
+  <div class="headiings">
+    <div class="heading">
+      
+    </div>
+    <div class="sidePannel">
+      <mat-accordion>
+        <div *ngFor="let t of menuAccordian; let i = index">
+        <mat-expansion-panel [style.background]="t.style.fill">
+          <mat-expansion-panel-header>
+            <mat-panel-title [style.color]="t.style.face">
+                <i [ngClass]="['fa',t.icon]" aria-hidden="true"></i>
+                <span>{{t.title}}</span>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="expansion" [ngClass]="[theme]">
+            <div class="sub-menu">
+              <div class="sub-1" [style.border-color]="t.style.border">
+              </div>
+              <div class="sub-2" [style.border-color]="t.style.border">
+              </div>
+              <div class="sub-3" [style.border-color]="t.style.border">
+              </div>
+            </div>
+          </div>
+        </mat-expansion-panel>
+        </div>
+      </mat-accordion>
+
+    </div>
+  </div>
+
+  <div class="recents">
+    <div class="heading">
+      MOST RECENT
+    </div>
+
+    <div class="tiles">
+      <div class="tile-container" *ngFor="let t of menuTilesRec; let i = index">
+        <div class="tile" [ngClass]="[t.style.type]" [style.background]="t.style.fill" [style.border-color]="t.style.border"
+          [style.color]="t.style.face">
+          <div class="tile-content">
+            <i [ngClass]="['fa',t.icon]" aria-hidden="true"></i>
+            <span>{{t.title}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="favourite">
+    <div class="heading">
+      MY FAVOURITE
+    </div>
+
+    <div class="tiles">
+      <div class="tile-container" *ngFor="let t of menuTilesFav; let i = index">
+        <div class="tile" [ngClass]="[t.style.type]" [style.background]="t.style.fill" [style.border-color]="t.style.border"
+          [style.color]="t.style.face">
+          <div class="tile-content">
+            <i [ngClass]="['fa',t.icon]" aria-hidden="true"></i>
+            <span>{{t.title}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

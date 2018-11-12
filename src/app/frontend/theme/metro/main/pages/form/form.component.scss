@@ -1,0 +1,29 @@
+@import '../../../assets/scss/colors';
+
+.allform {
+    float: left;
+    width: 100vw;
+    mat-card {
+        width: 47vw;
+        margin: 1vw .5vw;
+        text-align: left;
+        float: left;
+        min-height: 50vh;
+
+        mat-card-content {
+            width: 49%;
+            float: left;
+        }
+
+        .demo-full-width {  
+            width: 100%;
+        }
+        
+        mat-radio-button{
+            padding-right: 10px;
+        }
+        mat-checkbox{
+            padding-right: 10px
+        }
+    }
+}

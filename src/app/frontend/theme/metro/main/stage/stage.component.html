@@ -1,0 +1,14 @@
+<div class="stage-container" [ngClass]="[theme]">
+  <div class="top-bar">
+    <app-topbar (resize)="Resize($event)"></app-topbar>
+  </div>
+  <div class="stage" [@stage]="stage">
+    <div [ngClass]="['mask', theme]"></div>
+    <div class="page">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <div class="task-bar">
+    <app-taskbar></app-taskbar>
+  </div>
+</div>

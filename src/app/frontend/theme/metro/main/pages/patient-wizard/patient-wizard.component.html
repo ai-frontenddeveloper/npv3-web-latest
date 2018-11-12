@@ -1,0 +1,47 @@
+<div class="wizard">
+  <mat-card [ngClass]="[theme]">
+    <mat-card-header>
+      <mat-card-title>Patient Wizard</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-horizontal-stepper [linear]="false" #stepper>
+        <mat-step [stepControl]="firstFormGroup">
+          <form [formGroup]="firstFormGroup">
+            <ng-template matStepLabel>Fill out your name</ng-template>
+            <div class="formDiv">
+              <mat-form-field>
+                <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+              </mat-form-field>
+            </div>
+            <div>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step [stepControl]="secondFormGroup">
+          <form [formGroup]="secondFormGroup">
+            <ng-template matStepLabel>Fill out your address</ng-template>
+            <div class="formDiv">
+              <mat-form-field>
+                <input matInput placeholder="Address" formControlName="secondCtrl" required>
+              </mat-form-field>
+            </div>
+            <div>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button matStepperNext class="btn2">Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step>
+          <ng-template matStepLabel>Done</ng-template>
+          <div class="formDiv">
+            You are now done.</div>
+          <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button (click)="stepper.reset()" class="btn2">Reset</button>
+          </div>
+        </mat-step>
+      </mat-horizontal-stepper>
+    </mat-card-content>
+  </mat-card>
+</div>

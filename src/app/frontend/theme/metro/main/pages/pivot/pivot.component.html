@@ -1,0 +1,10 @@
+<dx-pivot-grid class="light-grid"
+  [showTotalsPrior]="showTotalsPrior ? 'both' : 'none'"
+  [dataFieldArea]="rowsDataFieldArea ? 'row' : 'column'"
+  [rowHeaderLayout]="treeHeaderLayout ? 'tree' : 'standard'"
+  [wordWrapEnabled]="false"
+  [dataSource]="pivotGridDataSource"
+  [showBorders]="true"
+  [height]="'92vh'">
+  <dxo-scrolling mode="virtual"></dxo-scrolling>
+</dx-pivot-grid>

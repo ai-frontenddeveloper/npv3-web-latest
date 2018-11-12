@@ -1,0 +1,40 @@
+@import "../../../assets/scss/colors.scss";
+
+.tiles {
+    margin: 0 auto;
+    width: 55vw;
+    padding-top: calc((90vh - 32vw)/2);
+    .tile-container {
+        margin: 1vw;
+        float: left;
+        .tile-sqr {
+            height: 15vw;
+            width: 15vw;
+            border: 2px solid;
+        }
+        .tile {
+            margin: 1vw;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            .tile-content {
+                height: 75%;
+                position: relative;
+                width: 75%;
+                margin: 0 auto;
+                i {
+                    width: 100%;
+                    font-size: 5vw;
+                }
+                span {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    font-size: 1.8vw;
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+}

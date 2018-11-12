@@ -1,0 +1,20 @@
+@import "../../../assets/scss/colors.scss";
+
+.wizard {
+    mat-card {
+        width: 60vw;
+        margin: 5vh auto;
+
+        .btn2 {
+            float: right;
+        }
+
+        mat-horizontal-stepper {
+            height: 73vh;
+
+            .formDiv {
+                height: 60vh;
+            }
+        }
+    }
+}

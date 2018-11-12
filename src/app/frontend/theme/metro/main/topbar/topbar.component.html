@@ -1,0 +1,43 @@
+<mat-toolbar [@topbar]="topbar" [ngClass]="['topbar', theme]">
+    <div class="logo" [routerLink]="'/stage/tiles'">NEXUS PRO</div>
+    <span class="toolbar-right"></span>
+    <div class="toolbar-icon">
+        <mat-icon>account_circle</mat-icon>
+        <mat-icon>notifications_active</mat-icon>
+        <mat-icon>message</mat-icon>
+        <mat-icon (click)="toggleTheme()">{{ mThemeIcon }}</mat-icon>
+        <mat-icon (click)="toggleFullScreen()">{{ mScreenIcon }}</mat-icon>
+        <mat-icon (click)="toggleTopbar()"><i class="fa fa-thumb-tack" aria-hidden="true"></i></mat-icon>
+    </div>
+    <div class="menu-icon">
+        <button mat-flat-button [ngClass]="[theme]" [matMenuTriggerFor]="menu">
+            <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+                <mat-icon>account_circle</mat-icon>
+                <span>Account</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>notifications_active</mat-icon>
+                <span>Notifications</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>message</mat-icon>
+                <span>Message</span>
+            </button>
+            <button (click)="toggleTheme()" mat-menu-item>
+                <mat-icon >{{ mThemeIcon }}</mat-icon>
+                <span>Theme</span>
+            </button>
+            <button (click)="toggleTopbar()" mat-menu-item>
+                <mat-icon ><i class="fa fa-thumb-tack" aria-hidden="true"></i></mat-icon>
+                <span>Pin Toolbar</span>
+            </button>
+        </mat-menu>
+    </div>
+</mat-toolbar>
+
+<mat-progress-bar *ngIf="progressShow" mode="determinate" [value]="[progressValue]"></mat-progress-bar>
+
+<mat-icon [ngClass]="[theme]" id="pin" [@topbar]="pin" (click)="toggleTopbar()"><i class="fa fa-thumb-tack fa-rotate-90" aria-hidden="true"></i></mat-icon>

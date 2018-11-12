@@ -1,0 +1,11 @@
+<div class="tiles">
+  <div class="tile-container" *ngFor="let t of desktopTiles; let i = index">
+    <a class="tile" [ngClass]="[t.style.type]" [style.background]="t.style.fill" [style.border-color]="t.style.border"
+      [style.color]="t.style.face" [routerLink]="[t.link]">
+      <div class="tile-content">
+        <i [ngClass]="['fa', t.icon]" aria-hidden="true"></i>
+        <span>{{t.title}}</span>
+      </div>
+    </a>
+  </div>
+</div>

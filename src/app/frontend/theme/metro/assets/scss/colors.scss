@@ -1,0 +1,145 @@
+@import './styles';
+
+//default palette forground/background:
+$light-foreground-palette: map-get($theme, foreground);
+$light-background-palette: map-get($theme, background);
+
+//dark palette forground/background:
+$dark-foreground-palette: map-get($dark-theme, foreground);
+$dark-background-palette: map-get($dark-theme, background);
+
+.light-colors {
+    background-color: mat-color($primary, default);
+    color: mat-color($light-foreground-palette, base);
+
+    input::-moz-placeholder { 
+        color: mat-color($light-foreground-palette, base); 
+    }
+    input::-webkit-input-placeholder, p {
+        color: mat-color($light-foreground-palette, base); 
+    }
+    mat-label {
+        color: mat-color($light-foreground-palette, base);
+    }
+    mat-form-field::ng-deep {
+        .mat-form-field-label, .mat-select-arrow {
+            color: mat-color($light-foreground-palette, base);
+        }
+        .mat-form-field-underline, .mat-form-field-ripple {
+            background-color: mat-color($light-foreground-palette, secondary-text);
+        }
+        .mat-checkbox-frame {
+            background-color: mat-color($light-foreground-palette, base);
+            border-color: mat-color($light-foreground-palette, base);
+        }
+    }
+    mat-radio-button::ng-deep {
+       .mat-radio-outer-circle {
+            border-color: mat-color($light-foreground-palette, base);
+        }
+        .mat-radio-inner-circle {
+            background-color: mat-color($light-foreground-palette, base);
+        }
+    }
+    mat-checkbox::ng-deep {
+        .mat-checkbox-frame {
+            border-color: mat-color($light-foreground-palette, base);
+        }
+        .mat-checkbox-background {
+            background-color: transparent;
+        }
+        .mat-checkbox-checkmark-path {
+            stroke: mat-color($light-foreground-palette, base) !important;
+        }
+    }
+    form button {
+        background-color: mat-color($light-foreground-palette, base);
+        color: mat-color($light-background-palette, raised-button);
+    }
+    button {
+        background-color: mat-color($light-background-palette, raised-button);
+        color: mat-color($light-foreground-palette, base);
+    }
+    mat-horizontal-stepper::ng-deep {
+            background-color: mat-color($primary, default);
+        .mat-stepper-horizontal-line {
+            border-top-color:mat-color($light-foreground-palette, secondary-text);
+        }
+        .mat-step-label{
+            color: mat-color($light-foreground-palette, base);
+
+        }
+        button {
+            background-color: mat-color($light-foreground-palette, base);
+            color: mat-color($light-background-palette, raised-button);
+        }
+    }
+}
+
+.dark-colors {
+    background-color: mat-color($dark-primary, default);
+    color: mat-color($dark-foreground-palette, base);
+    
+    input::-moz-placeholder { 
+        color: mat-color($dark-foreground-palette, base); 
+    }
+    input::-webkit-input-placeholder, p {
+        color: mat-color($dark-foreground-palette, base); 
+    }
+    mat-label {
+        color: mat-color($dark-foreground-palette, base);
+    }
+    mat-form-field::ng-deep {
+        .mat-form-field-label, .mat-select-arrow {
+            color: mat-color($dark-foreground-palette, base);
+        }
+        .mat-form-field-underline, .mat-form-field-ripple {
+            background-color: mat-color($dark-foreground-palette, secondary-text);
+        }
+        .mat-checkbox-frame {
+            background-color: mat-color($dark-foreground-palette, base);
+            border-color: mat-color($dark-foreground-palette, base);
+        }
+    }
+    mat-radio-button::ng-deep {
+       .mat-radio-outer-circle {
+            border-color: mat-color($dark-foreground-palette, base);
+        }
+        .mat-radio-inner-circle {
+            background-color: mat-color($dark-foreground-palette, base);
+        }
+    }
+    mat-checkbox::ng-deep {
+        .mat-checkbox-frame {
+            border-color: mat-color($dark-foreground-palette, base);
+        }
+        .mat-checkbox-background {
+            background-color: transparent;
+        }
+        .mat-checkbox-checkmark-path {
+            stroke: mat-color($dark-foreground-palette, base) !important;
+        }
+    }
+    button {
+        background-color: mat-color($dark-background-palette, raised-button);
+        color: mat-color($dark-foreground-palette, base);
+    }
+    form button {
+        background-color: mat-color($dark-foreground-palette, base);
+        color: mat-color($dark-background-palette, raised-button);
+    }
+    mat-horizontal-stepper::ng-deep {
+            background-color: mat-color($dark-primary, default);
+        .mat-stepper-horizontal-line {
+             border-top-color:mat-color($dark-foreground-palette, secondary-text);
+        }
+        .mat-step-label{
+            color: mat-color($dark-foreground-palette, base);
+
+        }
+        button {
+            background-color: mat-color($dark-foreground-palette, base);
+            color: mat-color($dark-background-palette, raised-button);
+        }
+    }
+}

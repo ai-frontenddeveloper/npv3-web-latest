@@ -1,0 +1,13 @@
+<dx-data-grid id="gridContainer" [dataSource]="customers" [allowColumnReordering]="true" [showBorders]="true" [height]="'92vh'">
+
+    <dxi-column dataField="CompanyName" cellTemplate="cellTemplate"></dxi-column>
+    <dxi-column dataField="Phone"></dxi-column>
+    <dxi-column dataField="Fax"></dxi-column>
+    <dxi-column dataField="City"></dxi-column>
+    <dxi-column dataField="State" [groupIndex]="0"></dxi-column>
+
+    <dxo-search-panel [visible]="true"></dxo-search-panel>
+    <dxo-paging [pageSize]="10"></dxo-paging>
+    <dxo-group-panel [visible]="true"></dxo-group-panel>
+    <dxo-grouping #expand [autoExpandAll]="true"></dxo-grouping>
+</dx-data-grid>

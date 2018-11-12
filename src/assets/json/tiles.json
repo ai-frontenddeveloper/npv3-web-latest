@@ -1,0 +1,485 @@
+﻿{
+  "Tiles": [
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#fa6800", 
+        "border": "#fa6800"
+      },
+      "icon": "fa-id-card-o",
+      "title": "Reception",
+      "link": "/stage/form",
+      "group": "desktop"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#81003c",
+        "border": "#81003c"
+      },
+      "icon": "fa-cogs",
+      "title": "Managment",
+      "link": "/stage/wizard",
+      "group": "desktop"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#00356a", 
+        "border": "#00356a"
+      },
+      "icon": "fa-flask",
+      "title": "Sample Managment",
+      "link": "/stage/grid",
+      "group": "desktop"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#003e00",
+        "border": "#003e00"
+      },
+      "icon": "fa-clipboard",
+      "title": "Reports",
+      "link": "/stage/pivot",
+      "group": "desktop"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#9a1616", 
+        "border": "#9a1616"
+      },
+      "icon": "fa-stethoscope",
+      "title": "Laboratory",
+      "link": "#",
+      "group": "desktop"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#20b2aa",
+        "border": "#20b2aa"
+      },
+      "icon": "fa-headphones",
+      "title": "Support",
+      "link": "#",
+      "group": "desktop"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#fa6800",
+        "border": "#fa6800"
+      },
+      "icon": "fa fa-address-card-o",
+      "title": "Reception",
+      "link": "",
+      "group": "menu-recent"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-rect-h",
+        "face": "#fff",
+        "fill": "#222222",
+        "border": "#fa6800"
+      },
+      "icon": "fa fa-calculator",
+      "title": "Test Rate Calculation",
+      "link": "",
+      "group": "menu-recent"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#212121",
+        "border": "#fa6800"
+      },
+      "icon": "fa fa-history",
+      "title": "History",
+      "link": "",
+      "group": "menu-recent"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#81003c",
+        "border": "#81003c"
+      },
+      "icon": "fa fa-cogs",
+      "title": "Managment",
+      "link": "",
+      "group": "menu-recent"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#00356a",
+        "border": "#00356a"
+      },
+      "icon": "fa-flask",
+      "title": "Sample Managment",
+      "link": "",
+      "group": "menu-recent"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#003e00",
+        "border": "#003e00"
+      },
+      "icon": "fa-clipboard",
+      "title": "Reports",
+      "link": "",
+      "group": "menu-recent"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#8B8B8B",
+        "border": "#8B8B8B"
+      },
+      "icon": "fa fa-headphones",
+      "title": "Support",
+      "link": "",
+      "group": "menu-recent"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#212121",
+        "border": "#9a1616"
+      },
+      "icon": "fa fa-file-text-o",
+      "title": "Result Entry",
+      "link": "",
+      "group": "menu-recent"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#212121",
+        "border": "#00356a"
+      },
+      "icon": "fa fa-headphones",
+      "title": "Reception",
+      "link": "",
+      "group": "menu-recent"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#9a1616",
+        "border": "#9a1616"
+      },
+      "icon": "fa-stethoscope",
+      "title": "Laboratory",
+      "link": "",
+      "group": "menu-recent"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#212121",
+        "border": "#003e00"
+      },
+      "icon": "fa fa-headphones",
+      "title": "Reception",
+      "link": "",
+      "group": "menu-recent"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#9a1616",
+        "border": "#9a1616"
+      },
+      "icon": "fa-user-md",
+      "title": "Laboratory",
+      "link": "",
+      "group": "menu-fav"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#222222",
+        "border": "#fa6800"
+      },
+      "icon": "fa fa-calculator",
+      "title": "Test Rate Calculation",
+      "link": "",
+      "group": "menu-fav"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#fa6800",
+        "border": "#fa6800"
+      },
+      "icon": "fa fa-address-card-o",
+      "title": "Reception",
+      "link": "",
+      "group": "menu-fav"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#212121",
+        "border": "#fa6800"
+      },
+      "icon": "fa fa-history",
+      "title": "History",
+      "link": "",
+      "group": "menu-fav"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#003e00",
+        "border": "#003e00"
+      },
+      "icon": "fa-clipboard",
+      "title": "Reports",
+      "link": "",
+      "group": "menu-fav"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#212121",
+        "border": "#9a1616"
+      },
+      "icon": "fa fa-file-text-o",
+      "title": "Result Entry",
+      "link": "",
+      "group": "menu-fav"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#00356a",
+        "border": "#00356a"
+      },
+      "icon": "fa-flask",
+      "title": "Sample Managment",
+      "link": "",
+      "group": "menu-fav"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#212121",
+        "border": "#003e00"
+      },
+      "icon": "fa fa-headphones",
+      "title": "Reception",
+      "link": "",
+      "group": "menu-fav"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#212121",
+        "border": "#9a1616"
+      },
+      "icon": "fa fa-lock",
+      "title": "Security Center",
+      "link": "",
+      "group": "menu-fav"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#212121",
+        "border": "#00356a"
+      },
+      "icon": "fa fa-headphones",
+      "title": "Reception",
+      "link": "",
+      "group": "menu-fav"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#81003c",
+        "border": "#81003c"
+      },
+      "icon": "fa fa-cogs",
+      "title": "Managment",
+      "link": "",
+      "group": "menu-fav"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#8B8B8B",
+        "border": "#8B8B8B"
+      },
+      "icon": "fa fa-headphones",
+      "title": "Support",
+      "link": "",
+      "group": "menu-fav"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#055",
+        "border": "#fff"
+      },
+      "icon": "fa-user-md",
+      "title": "Doctor",
+      "link": "",
+      "group": "manu-head"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#055",
+        "border": "#fff"
+      },
+      "icon": "fa-user-md",
+      "title": "Doctor",
+      "link": "",
+      "group": "manu-head"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#fa6800", 
+        "border": "#fa6800"
+      },
+      "icon": "fa-id-card-o",
+      "title": "Reception",
+      "link": "",
+      "group": "accordion"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#81003c",
+        "border": "#81003c"
+      },
+      "icon": "fa-flask",
+      "title": "Sample Managment",
+      "link": "",
+      "group": "accordion"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#00356a", 
+        "border": "#00356a"
+      },
+      "icon": "fa-stethoscope",
+      "title": "Labortory",
+      "link": "",
+      "group": "accordion"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#003e00",
+        "border": "#003e00"
+      },
+      "icon": "fa-clipboard",
+      "title": "Reports",
+      "link": "",
+      "group": "accordion"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#9a1616", 
+        "border": "#9a1616"
+      },
+      "icon": "fa-cogs",
+      "title": "Managmant",
+      "link": "",
+      "group": "accordion"
+    },
+    {
+      "id":"000",
+      "style": {
+        "type": "tile-sqr",
+        "face": "#fff",
+        "fill": "#8B8B8B",
+        "border": "#8B8B8B"
+      },
+      "icon": "fa fa-headphones",
+      "title": "Support",
+      "link": "",
+      "group": "accordion"
+    }
+  ]
+}

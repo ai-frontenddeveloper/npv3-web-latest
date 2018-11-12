@@ -1,0 +1,17 @@
+<div [@taskbar]="taskbar" class="startMenu">
+    <div class="menuOut" (click)="toggleTaskbar()"></div>
+    <app-menu></app-menu>
+</div>
+<mat-toolbar [ngClass]="['taskbar', theme]">
+    <div class="menu-icon">
+        <mat-icon (click)="toggleTaskbar()">view_quilt</mat-icon>
+    </div>
+    <span class="taskbar-right"></span>
+    <div class="copyright">{{ copyright }}</div>
+    <span class="sap"></span>
+    <div class="clock">{{ date | date:'medium' }}</div>
+    <span class="sap"></span>
+    <div class="taskbar-icon">
+        <mat-icon>message</mat-icon>
+    </div>
+</mat-toolbar>

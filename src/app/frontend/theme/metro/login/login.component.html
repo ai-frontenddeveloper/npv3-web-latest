@@ -1,0 +1,39 @@
+<div class="login-container">
+
+  <div class="user-form-holder">
+    <form (ngSubmit)="lf.form.valid && onSubmit()" #lf="ngForm" novalidate>
+      <h2 class="logo-holder">Nexuspro Logo</h2>
+      <h3 class="title-heading">Login</h3>
+      <span class="title-contents">Log in to you account. Dont have one, Lets get <a [routerLink]="['register']">Registered</a></span>
+      <div class="form-container">
+        <mat-form-field>
+          <mat-label>Login</mat-label>
+          <input matInput required name="userName" [(ngModel)]="model.userName" placeholder="Your Login Name Here">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Password</mat-label>
+          <input matInput required name="password" [(ngModel)]="model.password" placeholder="Your Password Here" [type]="hide ? 'password' : 'text'">
+        </mat-form-field>
+        <span class="text-contents">Forget <a [routerLink]="">User Name</a> or <a [routerLink]="">Password</a>?</span>
+        <div class="button-row">
+          <button color="primary" mat-flat-button type="submit">Login</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  
+  <div class="user-page-footer">
+    <div class="user-footer-logo">
+      <span>BitLogix </span>
+      <small>Exploring Dimensions...</small>
+    </div>
+    <ul class="social-icons">
+      <li class="facebook-icon"><a href="#"></a></li>
+      <li class="twitter-icon"><a href="#"></a></li>
+      <li class="googleplus-icon"><a href="#"></a></li>
+      <li class="linkedin-icon"><a href="#"></a></li>
+      <li class="youtube-icon"><a href="#"></a></li>
+    </ul>
+  </div>
+</div>
+<h2 class="screem-res">Screen Resolution Not Supported</h2>

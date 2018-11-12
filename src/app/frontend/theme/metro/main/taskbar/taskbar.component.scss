@@ -1,0 +1,80 @@
+@import '../../assets/scss/colors';
+
+.taskbar {
+    height: 2rem;
+    filter: brightness(95%);
+    .taskbar-right {
+        flex: 1 1 auto;
+    }
+    .menu-icon {
+        mat-icon {
+            float: left;
+            margin: auto;
+            user-select: none;
+            -moz-user-select: none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            -o-user-select: none;
+            cursor: pointer;
+        }
+    }
+
+    .taskbar-icon {
+        mat-icon {
+            float: left;
+            margin: auto;
+            user-select: none;
+            -moz-user-select: none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            -o-user-select: none;
+            cursor: pointer;
+        }
+    }
+    .clock {
+        float: left;
+        font-size: .6em;
+        font-weight: 100;
+        line-height: 2.5vh;
+    }
+    .copyright {
+        float: left;
+        font-size: .6em;
+        font-weight: 100;
+        color: gray;
+        line-height: 2.5vh;
+    }
+    .sap {
+        float: left;
+        margin: 0 10px;
+        border: 1px solid gray;
+        height: 1.5rem;
+    }
+}
+.startMenu {
+    width: 100vw;
+    height: 97vh;
+    position: absolute;
+    transform-origin: bottom left;
+    bottom: 3vh;
+
+    .menuOut {
+        width: 100vw;
+        height: 97vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    app-menu {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+@media
+  (max-device-width: 500px) {
+    .copyright {
+        display: none;
+    }
+}
