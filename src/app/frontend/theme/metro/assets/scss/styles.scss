@@ -1,4 +1,6 @@
 @import '~@angular/material/theming';
+@import '_bootstrapGrid';
+@import '_genericStyles';
 
 @include mat-core();
 
