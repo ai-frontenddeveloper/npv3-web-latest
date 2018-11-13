@@ -27,3 +27,14 @@
         }
     }
 }
+
+.form-container-holder{
+    height: calc(100vh - 96px);
+    padding-bottom: 25px;
+    padding-top: 25px;
+    overflow-y: auto;
+}
+
+.allform .mat-card {
+    height: 100%;
+}
