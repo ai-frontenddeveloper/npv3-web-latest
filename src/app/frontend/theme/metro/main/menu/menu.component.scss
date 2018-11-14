@@ -11,14 +11,14 @@
     top: 0;
     left: 0;
     .settings {
-        width: 3vw;
-        height: 80vh;
-        float: left;
+        // width: 3vw;
+        // height: 80vh;
+        // float: left;
         position: relative;
 
         .menu-bottom {
             position: absolute;
-            padding-left: 16px;
+            padding-left: 6px;
             bottom: 2vh;
 
             .left-menu-item {
@@ -28,18 +28,20 @@
     }
 
     .headiings {
-        width: 24vw;
-        height: 80vh;
-        float: left;
+        // width: 24vw;
+        // height: 80vh;
+        // float: left;
         .heading {
             width: 100%;
             height: 10vh;
             line-height: 10vh;
         }
         .sidePannel {
-            height: 70vh;
-            float: left;
-            width: calc(19vw + 16px);
+            // height: 70vh;
+            // float: left;
+            // width: calc(19vw + 16px);
+            overflow-y: auto;
+            padding-right: 10px;
 
             mat-accordion{
                 mat-expansion-panel {
@@ -96,9 +98,9 @@
     }
 
     .recents {
-        width: 24vw;
+        // width: 24vw;
         height: 80vh;
-        float: left;
+        // float: left;
         .heading {
             width: 100%;
             height: 10vh;
@@ -145,9 +147,9 @@
     }
 
     .favourite {
-        width: 24vw;
-        height: 80vh;
-        float: left;
+        // width: 24vw;
+        // height: 80vh;
+        // float: left;
         .heading {
             width: 100%;
             height: 10vh;
@@ -194,3 +196,18 @@
         }
     }
 }
+
+.sidePannel::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(51, 51, 51, 0.3);
+    background-color: #333333;
+  }
+  
+  .sidePannel::-webkit-scrollbar {
+    width: 12px;
+    background-color: #333333;
+  }
+  
+  .sidePannel::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(128, 128, 128, 0.3);
+    background-color: #808080;
+  }
