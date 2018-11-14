@@ -53,14 +53,18 @@
 }
 .startMenu {
     width: 100vw;
-    height: 97vh;
+    // height: 97vh;
+    // bottom: 3vh;
+    height: calc(100vh - 96px);
     position: absolute;
+    -webkit-transform-origin: bottom left;
     transform-origin: bottom left;
-    bottom: 3vh;
+    bottom: 32px;
 
     .menuOut {
         width: 100vw;
-        height: 97vh;
+        // height: 97vh;
+        height: calc(100vh - 96px);
         position: absolute;
         top: 0;
         left: 0;
