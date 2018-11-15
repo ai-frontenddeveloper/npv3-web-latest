@@ -65,27 +65,27 @@
                         float: left;
                         
                         .sub-menu {
-                            margin: 0.25vw;
-                            float: left;
+                            // margin: 0.25vw;
+                            // float: left;
                             
                             .sub-1{
                                 height: 5.5vw;
-                                width: 5.5vw;
-                                float: left;
+                                // width: 5.5vw;
+                                // float: left;
                                 border: 2px solid;
                                 margin: .25vw;
                             }
                             .sub-2{
                                 height: 5.5vw;
-                                width: calc(12vw + 4px);
-                                float: left;
+                                // width: calc(9vw + 8px);
+                                // float: left;
                                 border: 2px solid;
                                 margin: .25vw;
                             }
                             .sub-3{
                                 height: 5.5vw;
-                                width: calc(18vw + 8px);
-                                float: left;
+                                // width: calc(15vw + 8px);
+                                // float: left;
                                 border: 2px solid;
                                 margin: .25vw;
                             }
@@ -197,6 +197,10 @@
     }
 }
 
+.mat-expansion-panel-header {
+    padding: 0 15px;
+}
+
 .sidePannel::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(51, 51, 51, 0.3);
     background-color: #333333;
@@ -210,4 +214,18 @@
   .sidePannel::-webkit-scrollbar-thumb {
     -webkit-box-shadow: inset 0 0 6px rgba(128, 128, 128, 0.3);
     background-color: #808080;
+  }
+
+
+//   Responsiveness
+@media only screen and (min-width: 993px) and (max-width: 1199px) { 
+    .mat-expansion-panel-header {
+        padding: 0 12px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .mat-expansion-panel-header {
+        padding: 0 12px;
+    }
   }
