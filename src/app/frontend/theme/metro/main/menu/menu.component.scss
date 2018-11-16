@@ -229,22 +229,4 @@
         padding: 0 12px;
     }
   }
-
-  @media screen and (max-width: 700px) {
-      .mainMenu > .container-fluid{
-        display: none;
-      }
-    .mainMenu:after {
-        position: absolute;
-        top: 48vw;
-        background: #e6e6e6;
-        content: "Screen not supported yet!";
-        margin: 0 auto;
-        text-align: center;
-        color: #222;
-        padding: 20px;
-        font-size: 20px;
-        left: 50px;
-        width: 60vw;
-    }
-  }
+  
